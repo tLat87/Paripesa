@@ -5,7 +5,7 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       groups:
-        - creds
+        - Creds
       vars:
         XCODE_WORKSPACE: "Paripesa.xcworkspace" # <--+++
         XCODE_SCHEME: "Paripesa" # <--+++
