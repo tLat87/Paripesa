@@ -36,7 +36,7 @@ export default WelcomeScreen4;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#2B46B2',
+        backgroundColor: '#fff',
     },
     topHalf: {
         flex: 1,
