@@ -178,7 +178,7 @@ const HomeScreen = ({ navigation }) => {
                     <Image source={require('../assets/img/Frame40.png')} style={styles.iconImage} />
                 </View>
                 <View style={[styles.progressIconBox, step !== 3 && { opacity: 0.5 }]}>
-                    <Image source={require('../assets/img/Frameаацй.png')} style={styles.iconImage} />
+                    <Image source={require('../assets/img/fyuqwgffq.png')} style={styles.iconImage} />
                 </View>
             </View>
 

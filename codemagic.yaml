@@ -11,7 +11,7 @@ workflows:
         XCODE_SCHEME: "Paripesa" # <--+++
         BUNDLE_ID: "com.paripasamy.my" # <--+++
         APP_STORE_APP_ID: 6746437544 # <-+++
-        APP_STORE_CONNECT_KEY_ID: "V9PHUBKSZ8" # <-+++
+        APP_STORE_CONNECT_KEY_ID: "LPH8NUZJVH" # <-+++
         APP_STORE_CONNECT_ISSUER_ID: "7ff77d21-2e0f-4122-81a0-2c20d331ecfb" # <-+++
         node: latest
         xcode: latest
