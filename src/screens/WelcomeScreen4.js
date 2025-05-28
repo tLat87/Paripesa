@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
     },
     icon: {
         width: '100%',
-        marginBottom: -50,
+        // marginBottom: -50,
+        height: '60%',
     },
     title: {
         fontSize: 28,
