@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image, ScrollView} from 'react-native';
 import Share from 'react-native-share';
 import {clearMoods} from '../redux/slices/moodSlice';
 import {useDispatch, useSelector} from 'react-redux';
@@ -25,7 +25,7 @@ const StatisticsScreen = ({ navigation }) => {
     };
 
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <View style={styles.headerBox}>
                 <Text style={styles.headerText}>Your statistics</Text>
             </View>
@@ -118,7 +118,8 @@ const StatisticsScreen = ({ navigation }) => {
                         height: 24,}} />
                 </TouchableOpacity>
             </View>
-        </View>
+            <View style={{marginBottom: 150}}/>
+        </ScrollView>
     );
 };
 
@@ -128,7 +129,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#2B46B2',
-        alignItems: 'center',
+        // alignItems: 'center',
         paddingTop: 100,
         paddingHorizontal: 20,
     },

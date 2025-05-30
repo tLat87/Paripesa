@@ -71,7 +71,9 @@ const InspirationScreen = ({navigation}) => {
 
     return (
         <View style={styles.container}>
-
+            <TouchableOpacity style={{position: 'absolute', top: 50, left: 20}} onPress={()=>{navigation.navigate('Home')}}>
+                <Text style={[styles.title, {color: '#fff'}]}>Back</Text>
+            </TouchableOpacity>
             <View style={[styles.card, {marginBottom: 20}]}>
                 <Text style={styles.title}>Inspiration generator</Text>
             </View>
@@ -104,20 +106,20 @@ const InspirationScreen = ({navigation}) => {
                     </View>
                 </View>
             )}
-            <View style={styles.floatingNav}>
-                <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('InspirationScreen')}>
-                    <Image source={require('../assets/img/mingcute_ai-line.png')} style={styles.fabImage} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('StatisticsScreen')}>
-                    <Image source={require('../assets/img/hugeicons_profile.png')} style={styles.fabImage} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('SavedQuotesScreen')}>
-                    <Image source={require('../assets/img/solar_bookmark-outline.png')} style={styles.fabImage} />
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('Home')}>
-                    <Image source={require('../assets/img/hugeicons_task-01.png')} style={styles.fabImage} />
-                </TouchableOpacity>
-            </View>
+            {/*<View style={styles.floatingNav}>*/}
+            {/*    <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('InspirationScreen')}>*/}
+            {/*        <Image source={require('../assets/img/mingcute_ai-line.png')} style={styles.fabImage} />*/}
+            {/*    </TouchableOpacity>*/}
+            {/*    <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('StatisticsScreen')}>*/}
+            {/*        <Image source={require('../assets/img/hugeicons_profile.png')} style={styles.fabImage} />*/}
+            {/*    </TouchableOpacity>*/}
+            {/*    <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('SavedQuotesScreen')}>*/}
+            {/*        <Image source={require('../assets/img/solar_bookmark-outline.png')} style={styles.fabImage} />*/}
+            {/*    </TouchableOpacity>*/}
+            {/*    <TouchableOpacity style={styles.fabIcon} onPress={() => navigation.replace('Home')}>*/}
+            {/*        <Image source={require('../assets/img/hugeicons_task-01.png')} style={styles.fabImage} />*/}
+            {/*    </TouchableOpacity>*/}
+            {/*</View>*/}
         </View>
     );
 };

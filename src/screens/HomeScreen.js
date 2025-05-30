@@ -427,8 +427,8 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     fabImage: {
-        width: 24,
-        height: 24,
+        width: 18,
+        height: 18,
     },
 });
 
